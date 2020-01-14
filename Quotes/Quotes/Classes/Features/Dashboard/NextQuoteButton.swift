@@ -16,6 +16,8 @@ struct NextQuoteButton: View {
                 .padding(.all)
                 .foregroundColor(Color.black)
         }.background(Color.blue)
+        .cornerRadius(25)
+        .shadow(radius: 4)
     }
 }
 

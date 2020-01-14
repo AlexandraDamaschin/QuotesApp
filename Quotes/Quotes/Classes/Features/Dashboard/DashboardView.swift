@@ -11,7 +11,7 @@ import SwiftUI
 struct DashboardView: View {
     var body: some View {
         ZStack{
-            Color.green
+            Color("primaryColor")
             VStack(spacing: 50) {
                 QuotesText()
                 NextQuoteButton()
@@ -22,6 +22,11 @@ struct DashboardView: View {
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView()
+        Group {
+            DashboardView()
+                .environment(\.colorScheme, .light)
+            DashboardView()
+                .environment(\.colorScheme, .dark)
+        }
     }
 }

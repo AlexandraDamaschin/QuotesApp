@@ -13,7 +13,7 @@ struct QuotesText: View {
         Text("Happy day!")
             .font(.largeTitle)
             .fontWeight(.semibold)
-            .foregroundColor(Color.yellow)
+            .foregroundColor(Color.white)
             .lineLimit(30)
             .padding(.all)
     }
