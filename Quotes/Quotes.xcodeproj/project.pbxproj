@@ -10,13 +10,13 @@
 		AE0E1A3A23CDBC4800401766 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E1A3923CDBC4800401766 /* DashboardView.swift */; };
 		AE0E1A3C23CDC15B00401766 /* QuotesText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E1A3B23CDC15B00401766 /* QuotesText.swift */; };
 		AE0E1A3E23CDC1DB00401766 /* NextQuoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E1A3D23CDC1DB00401766 /* NextQuoteButton.swift */; };
+		AE0E1A4223CDC34800401766 /* DashboardViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0E1A4123CDC34800401766 /* DashboardViewTest.swift */; };
 		AE5A302323CDB9960043A0DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A302223CDB9960043A0DC /* AppDelegate.swift */; };
 		AE5A302523CDB9960043A0DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A302423CDB9960043A0DC /* SceneDelegate.swift */; };
 		AE5A302923CDB9970043A0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A302823CDB9970043A0DC /* Assets.xcassets */; };
 		AE5A302C23CDB9970043A0DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A302B23CDB9970043A0DC /* Preview Assets.xcassets */; };
 		AE5A302F23CDB9970043A0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5A302D23CDB9970043A0DC /* LaunchScreen.storyboard */; };
 		AE5A303A23CDB9970043A0DC /* QuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A303923CDB9970043A0DC /* QuotesTests.swift */; };
-		AE5A304523CDB9970043A0DC /* QuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A304423CDB9970043A0DC /* QuotesUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,7 @@
 		AE0E1A3923CDBC4800401766 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		AE0E1A3B23CDC15B00401766 /* QuotesText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesText.swift; sourceTree = "<group>"; };
 		AE0E1A3D23CDC1DB00401766 /* NextQuoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextQuoteButton.swift; sourceTree = "<group>"; };
+		AE0E1A4123CDC34800401766 /* DashboardViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewTest.swift; sourceTree = "<group>"; };
 		AE5A301F23CDB9960043A0DC /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A302223CDB9960043A0DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5A302423CDB9960043A0DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		AE5A303923CDB9970043A0DC /* QuotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTests.swift; sourceTree = "<group>"; };
 		AE5A303B23CDB9970043A0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5A304023CDB9970043A0DC /* QuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5A304423CDB9970043A0DC /* QuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesUITests.swift; sourceTree = "<group>"; };
 		AE5A304623CDB9970043A0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5A305223CDBAA60043A0DC /* Quotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quotes.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE0E1A3F23CDC2F600401766 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AE0E1A4023CDC2FE00401766 /* Dashboard */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AE0E1A4023CDC2FE00401766 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AE0E1A4123CDC34800401766 /* DashboardViewTest.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		AE5A301623CDB9960043A0DC = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +150,7 @@
 		AE5A304323CDB9970043A0DC /* QuotesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AE5A304423CDB9970043A0DC /* QuotesUITests.swift */,
+				AE0E1A3F23CDC2F600401766 /* Features */,
 				AE5A304623CDB9970043A0DC /* Info.plist */,
 			);
 			path = QuotesUITests;
@@ -251,6 +267,7 @@
 					};
 					AE5A303F23CDB9970043A0DC = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = AE5A301E23CDB9960043A0DC;
 					};
 				};
@@ -327,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5A304523CDB9970043A0DC /* QuotesUITests.swift in Sources */,
+				AE0E1A4223CDC34800401766 /* DashboardViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NYK4JQZ6U;
 				INFOPLIST_FILE = QuotesUITests/Info.plist;
@@ -576,6 +594,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.agilefreaks.QuotesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Quotes;
@@ -586,6 +605,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NYK4JQZ6U;
 				INFOPLIST_FILE = QuotesUITests/Info.plist;
