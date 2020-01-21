@@ -15,6 +15,16 @@ class QuotesViewModel: ObservableObject {
     func loadData() {
         let url = URL(string: "https://agile-quotes.herokuapp.com/api/quotes/1")!
         
+       self.loadQuote(with: url)
+    }
+    
+    func loadRandomQuote() {
+        let url = URL(string: "https://agile-quotes.herokuapp.com/api/quotes/random")!
+        
+        self.loadQuote(with: url)
+    }
+    
+    private func loadQuote(with url: URL) {
         let request = URLRequest.init(url: url)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
@@ -28,9 +38,5 @@ class QuotesViewModel: ObservableObject {
                 }
             }
         }.resume()
-    }
-    
-    func loadRandomQuote() {
-        
     }
 }

@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct NextQuoteButton: View {
+    @ObservedObject var viewModel: QuotesViewModel
+    
     var body: some View {
-        Button(action: {}) {
+        Button(action: {
+            self.viewModel.loadRandomQuote()
+        }) {
             Text("Random quote")
                 .fontWeight(.bold)
                 .padding(.all)
@@ -22,7 +26,8 @@ struct NextQuoteButton: View {
 }
 
 struct NextQuoteButton_Previews: PreviewProvider {
+    @State static var quote = QuotesViewModel()
     static var previews: some View {
-        NextQuoteButton()
+        NextQuoteButton(viewModel: quote)
     }
 }

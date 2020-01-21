@@ -16,8 +16,8 @@ struct DashboardView: View {
         ZStack{
             Color("primaryColor")
             VStack(spacing: 50) {
-                QuotesText(quote:self.$viewModel.quote)
-                NextQuoteButton()
+                QuotesText(quote: self.$viewModel.quote)
+                NextQuoteButton(viewModel: self.viewModel)
             }
         }.edgesIgnoringSafeArea(Edge.Set([.all]))
         .onAppear(perform: self.viewModel.loadData)
