@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct QuotesText: View {
+    @Binding var quote: Quote?
+    
     var body: some View {
-        Text("Happy day!")
+        let message = self.quote?.text ?? ""
+        return Text(message)
             .font(.largeTitle)
             .fontWeight(.semibold)
             .foregroundColor(Color.white)
@@ -20,7 +23,9 @@ struct QuotesText: View {
 }
 
 struct QuotesText_Previews: PreviewProvider {
+    @State static var dummyQuote: Quote? = Quote(id: 1, text: "Dummy =")
+    
     static var previews: some View {
-        QuotesText()
+        return QuotesText(quote: $dummyQuote)
     }
 }
