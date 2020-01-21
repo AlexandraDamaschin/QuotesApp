@@ -21,6 +21,9 @@ struct DashboardView: View {
             }
         }.edgesIgnoringSafeArea(Edge.Set([.all]))
         .onAppear(perform: self.viewModel.loadData)
+            .tabItem {
+                Text("Dashboard")
+        }
         
     }
 }
