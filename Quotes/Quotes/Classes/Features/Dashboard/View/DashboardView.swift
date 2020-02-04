@@ -25,7 +25,7 @@ struct DashboardView: View {
                 Spacer()
                 VStack() {
                     Spacer(minLength: 20)
-                    QuoteInteractionMenu()
+                    QuoteInteractionMenu(quote: self.$viewModel.quote)
                     Spacer(minLength: 20)
                 }.frame(maxHeight: 100)
                 
@@ -35,7 +35,6 @@ struct DashboardView: View {
             .tabItem {
                 Text("Dashboard")
         }
-        
     }
 }
 

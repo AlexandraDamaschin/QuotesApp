@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct QuoteInteractionMenu: View {
+    @State private var showShareSheet = false
+    @Binding var quote: Quote?
+    
     var body: some View {
         HStack() {
             Spacer()
@@ -43,19 +46,23 @@ struct QuoteInteractionMenu: View {
             Spacer()
             
             Button(action: {
-                print("Button")
+                self.showShareSheet = true
                 //todo: set image .fill
             }) {
                 Image(systemName: "square.and.arrow.up")
                 Text("Share")
-            }
+            }.sheet(isPresented: $showShareSheet) {
+                ShareSheet(activityItems: [self.quote?.text ?? ""])
+            }.disabled(self.quote?.text == nil)
+            
             Spacer()
         }
     }
 }
 
 struct QuoteInteractionMenu_Previews: PreviewProvider {
+    @State static var dummyQuote: Quote? = Quote(id: 1, text: "Dummy =")
     static var previews: some View {
-        QuoteInteractionMenu()
+        QuoteInteractionMenu(quote: $dummyQuote)
     }
 }

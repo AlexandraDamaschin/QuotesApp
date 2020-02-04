@@ -19,6 +19,7 @@
 		AE5A302F23CDB9970043A0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5A302D23CDB9970043A0DC /* LaunchScreen.storyboard */; };
 		AE5A303A23CDB9970043A0DC /* QuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A303923CDB9970043A0DC /* QuotesTests.swift */; };
 		AEE2A00C23E96207007C7822 /* QuoteInteractionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A00B23E96207007C7822 /* QuoteInteractionMenu.swift */; };
+		AEE2A00E23E96859007C7822 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2A00D23E96859007C7822 /* ShareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		AE5A304623CDB9970043A0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5A305223CDBAA60043A0DC /* Quotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quotes.entitlements; sourceTree = "<group>"; };
 		AEE2A00B23E96207007C7822 /* QuoteInteractionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteInteractionMenu.swift; sourceTree = "<group>"; };
+		AEE2A00D23E96859007C7822 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE2A00B23E96207007C7822 /* QuoteInteractionMenu.swift */,
+				AEE2A00D23E96859007C7822 /* ShareView.swift */,
 			);
 			path = QuoteInteractionMenu;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE2A00E23E96859007C7822 /* ShareView.swift in Sources */,
 				AE5A302323CDB9960043A0DC /* AppDelegate.swift in Sources */,
 				AE434BDB23D72B280019D758 /* QuotesViewModel.swift in Sources */,
 				AE0E1A3C23CDC15B00401766 /* QuotesText.swift in Sources */,
