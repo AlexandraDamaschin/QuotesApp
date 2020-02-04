@@ -10,6 +10,8 @@ import SwiftUI
 
 struct QuoteInteractionMenu: View {
     @State private var showShareSheet = false
+    @State private var showingAlert = false
+    
     @Binding var quote: Quote?
     
     var body: some View {
@@ -36,11 +38,16 @@ struct QuoteInteractionMenu: View {
             Spacer()
             
             Button(action: {
-                print("Button")
+               UIPasteboard.general.string = self.quote?.text ?? ""
+               self.showingAlert = true
                 //todo: set image .fill
             }) {
                 Image(systemName: "doc.on.doc")
                 Text("Copy")
+            } .alert(isPresented: $showingAlert) {
+                       Alert(title: Text("Important message"),
+                             message: Text("Text copied to clipboard"),
+                             dismissButton: .default(Text("Got it!")))
             }
             
             Spacer()
